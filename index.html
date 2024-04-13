@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./assets/iconcoffe.png">
+    
+    <link rel="stylesheet" href="./styles/output.css">
+
+    <title>Coffee Shop</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img src="https://i.pinimg.com/564x/e0/0c/99/e00c996f2c5d1d77e7873eac409bd02d.jpg"
+            alt="Logo Burguer"
+            class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+            />
+            <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Coffee Shop</h1>
+
+            <span class="text-white font-medium">Coffee Street, Nova York, NY</span>
+
+            <
+        </div>
+    </header>
+    <!-- HEADER END -->
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+        Discover our menu
+    </h2>
+
+    <!-- start menu -->
+
+    <div id="menu">
+        <main class="grid grid-cols-1 md:grid-cols-3 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16"> <!-- grade de colunas -> md:grid-cols-2-->
+    <!-- product item -->
+            <div class="flex gap-2">
+                <img
+                    src="./assets/cafe.jpg"
+                    alt="Cappuccino"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-350"
+
+                />
+
+                <div >
+                    <p class="font-bold">Cappuccino</p>
+                    <p class="text-sm">A cappuccino is a cozy Italian classic, blending espresso with steamed milk and topped with a frothy foam layer.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">2.00$</p>
+                        <button
+                         class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                         dara-name="Cappuccino"
+                         data-price="2.00"
+                         
+                         >
+                            <i class="fa fa-solid fa-cart-shopping text-lg text-white"></i>
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+        <!-- end product -->
+
+        <!-- product item -->
+            <div class="flex gap-2">
+                <img
+                    src="./assets/macchiato.jpg"
+                    alt="Caramel Macchiato"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-350"
+
+                />
+
+                <div>
+                    <p class="font-bold">Caramel Macchiato</p>
+                    <p class="text-sm">A Caramel Macchiato is a delightful coffee beverage that tantalizes the taste buds with its perfect balance of rich espresso, velvety steamed milk, and a sweet caramel drizzle.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">3.00$</p>
+                        <button
+                         class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                         dara-name="Caramel Macchiato"
+                         data-price="3.00"
+                         
+                         >
+                            <i class="fa fa-solid fa-cart-shopping text-lg text-white"></i>
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+        <!-- end product -->
+
+    <!-- product item -->
+         <div class="flex gap-2">
+            <img
+                src="./assets/coffee3.jpg"
+                alt="Salad Burguer"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-350"
+
+            />
+
+            <div >
+                <p class="font-bold">Espresso</p>
+                <p class="text-sm">An Espresso is the pure essence of coffee in a small, concentrated form. It's brewed by forcing hot water through finely-ground coffee beans under high pressure.</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">1.00$</p>
+                    <button
+                     class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                     dara-name="Espresso"
+                     data-price="1.00"
+                     
+                     >
+                        <i class="fa fa-solid fa-cart-shopping text-lg text-white"></i>
+                    </button>
+                    
+                </div>
+            </div>
+        </div>
+    <!-- end product -->
+
+           <!-- product item -->
+           <div class="flex gap-2">
+            <img
+                src="./assets/icedcoffee.jpeg"
+                alt="Iced Coffee"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-350"
+
+            />
+
+            <div >
+                <p class="font-bold">Iced Coffe</p>
+                <p class="text-sm">
+                    Picture a tall glass filled with ice cubes, glistening with condensation in the warmth of a sunny day. Now, imagine rich, velvety coffee cascading over those ice cubes.</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">1.00$</p>
+                    <button
+                     class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                     dara-name="Iced Coffee"
+                     data-price="4.00"
+                     
+                     >
+                        <i class="fa fa-solid fa-cart-shopping text-lg text-white"></i>
+                    </button>
+                    
+                </div>
+            </div>
+        </div>
+    <!-- end product -->
+
+               <!-- product item -->
+               <div class="flex gap-2">
+                <img
+                    src="./assets/affogato.png"
+                    alt="Iced Coffee"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-350"
+    
+                />
+    
+                <div >
+                    <p class="font-bold">Affogato</p>
+                    <p class="text-sm">
+                        Indulge in the Italian elegance of an affogato, where simplicity meets sophistication in a timeless dessert. Picture a scoop of creamy vanilla gelato.</p>
+    
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">7.00$</p>
+                        <button
+                         class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                         dara-name="Affogato"
+                         data-price="7.00"
+                         
+                         >
+                            <i class="fa fa-solid fa-cart-shopping text-lg text-white"></i>
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+        <!-- end product -->
+
+                       <!-- product item -->
+           <div class="flex gap-2">
+            <img
+                src="./assets/mocha.png"
+                alt="Iced Coffee"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-350"
+
+            />
+
+            <div >
+                <p class="font-bold">Mocha</p>
+                <p class="text-sm">
+                    
+Imagine a velvety blend of rich espresso, decadent chocolate, and creamy steamed milk coming together in perfect harmony. The aroma alone is a temptation.</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">5.00$</p>
+                    <button
+                     class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                     dara-name="Mocha"
+                     data-price="5.00"
+                     
+                     >
+                        <i class="fa fa-solid fa-cart-shopping text-lg text-white"></i>
+                    </button>
+                    
+                </div>
+            </div>
+        </div>
+    <!-- end product -->
+        </main>
+
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl">
+                Snacks & Sweets
+            </h2>
+        </div>
+
+        <!-- grids snacks -->
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+    <!-- product item -->
+        <div class="flex gap-2 w-full">
+            <img
+                src="./assets/Cornetti.jpg"
+                alt="snack"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-350"
+
+            />
+
+            <div class="w-full">
+                <p class="font-bold">Cornetti</p>
+                <p class="text-sm">an Italian croissant, is a delectable pastry renowned for its flaky layers and buttery taste. Resembling a miniature crescent.</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">2.00$</p>
+                    <button
+                     class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                     dara-name="Cornetti"
+                     data-price="2.00"
+                     
+                     >
+                        <i class="fa fa-solid fa-cart-shopping text-lg text-white"></i>
+                    </button>
+                    
+                </div>
+            </div>
+        </div>
+    <!-- end product -->
+
+            <!-- product item -->
+            <div class="flex gap-2 w-full">
+                <img
+                    src="./assets/pancakes.jpg"
+                    alt="Salad Burguer"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-350"
+    
+                />
+    
+                <div class="w-full">
+                    <p class="font-bold">Pancakes</p>
+                    <p class="text-sm">
+                        Pancakes are a beloved breakfast classic enjoyed around the world for their fluffy texture and comforting flavor.</p>
+    
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">3.00$</p>
+                        <button
+                         class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                         dara-name="Pancakes"
+                         data-price="3.00"
+                         
+                         >
+                            <i class="fa fa-solid fa-cart-shopping text-lg text-white"></i>
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+        <!-- end product -->
+
+                    <!-- product item -->
+                    <div class="flex gap-2 w-full">
+                        <img
+                            src="./assets/brownie.jpg"
+                            alt="Salad Burguer"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-350"
+            
+                        />
+            
+                        <div class="w-full">
+                            <p class="font-bold">Brownie</p>
+                            <p class="text-sm">
+                                Brownies are the epitome of indulgent dessert bliss, delighting taste buds with their rich, fudgy texture and intense chocolate flavor. Baked to perfection.</p>
+            
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg">2.50$</p>
+                                <button
+                                 class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                 dara-name="Brownie"
+                                 data-price="3.00"
+                                 
+                                 >
+                                    <i class="fa fa-solid fa-cart-shopping text-lg text-white"></i>
+                                </button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                <!-- end product -->
+
+                            <!-- product item -->
+            <div class="flex gap-2 w-full">
+                <img
+                    src="./assets/cookies.jpg"
+                    alt="Salad Burguer"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-350"
+    
+                />
+    
+                <div class="w-full">
+                    <p class="font-bold">Chocolate Chip Cookies</p>
+                    <p class="text-sm">
+                        Cookies are delightful baked treats that bring joy with every bite. They come in a myriad of shapes, sizes, and flavors, each offering a unique sensory experience.</p>
+    
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">2.00$</p>
+                        <button
+                         class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                         dara-name="Cookies"
+                         data-price="2.00"
+                         
+                         >
+                            <i class="fa fa-solid fa-cart-shopping text-lg text-white"></i>
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+        <!-- end product -->
+
+
+        </div>
+
+        
+
+        <!-- end grid drinks -->
+
+    </div>
+<!-- cart -->
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-9 [99] items-center justify-center hidden">
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w[600px]">
+            <h2 class="text-center font-bold text-2xl mb-2">My cart</h2>
+
+            <div id="cart-items" class="flex justify-between mb-2 flex-col">
+
+                <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+                <p class="font-bold mt-4">Address: <span id="cart-total">0.00</span></p>
+                <input 
+                    type="text"
+                    placeholder="Enter your Full Address..."
+                    id="address"
+                    class="w-full border-2 p-1 rounded my-1"
+                />
+
+                <p class="text-red-500 hidden" id="address-warn">Enter your Full Address</p>
+
+                <div>
+                    <button id="close-modal-btn">Close</button>
+                    <button id="checkout-btn" class="bg-amber-900 text-white px-4 py-1 rounded">Finalize order</button>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- end menu -->
+
+    <footer class="w-full bg-amber-900 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+        <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+            (<span class="cart-count">0</span>)
+            See my cart
+            <i class="fa fa-cart-plus text-lg text white"></i>
+        </button>
+    </footer>
+
+</body>
+</html>
